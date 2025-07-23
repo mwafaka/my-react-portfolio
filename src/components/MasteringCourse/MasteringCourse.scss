@@ -1,0 +1,85 @@
+@use "../../global.scss" as *;
+
+@mixin mobile {
+  @media (min-width: 400px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+.mastering {
+  background-color: #fff;
+  padding: 80px clamp(1rem, 5vw, 10%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  @include mobile {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  &__content {
+    flex: 1;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 1.2rem;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        width: 60%;
+        background: linear-gradient(90deg, #facc15, #f97316);
+        border-radius: 2px;
+      }
+
+      span {
+        background: linear-gradient(90deg, #0cbfb6, #007aff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.7;
+      color: #334155;
+
+      strong {
+        font-weight: 700;
+        color: #0f172a;
+      }
+    }
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 25px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 20px 45px rgba(12, 191, 182, 0.4);
+      }
+    }
+  }
+}

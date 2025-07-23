@@ -1,0 +1,50 @@
+@use "../../global.scss" as *;
+
+@mixin mobile {
+  @media (min-width: 400px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+.footer {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  padding: 40px clamp(1rem, 5vw, 10%);
+  text-align: center;
+  font-size: 0.95rem;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+
+      span {
+        color: #0cbfb6;
+        font-weight: 600;
+      }
+
+      strong {
+        color: #facc15;
+        font-weight: 600;
+      }
+    }
+
+    small {
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+  }
+
+  @include mobile {
+    padding: 30px 1rem;
+
+    &__container {
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
