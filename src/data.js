@@ -24,7 +24,7 @@ export const Reactx = [
         id: 4,
         title: 'E-commerce shopping app',
         img: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg',
-        url: 'https://github.com/mwafaka/E_Commerce_App_Stripe_React_hooks',
+        url: 'https://github.com/mwafaka/shopping',
         level: 'medium'
     },
     {

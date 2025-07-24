@@ -3,13 +3,13 @@ import "./About.scss";
 
 function AboutMe() {
     return (
-        
+
         <div className="about" id="about" >
             <div className="about__content">
                 <h1>Hello, I’m <span>Mo Arbash</span></h1>
                 <h2>A Passionate Full Stack Web Developer with a Teaching Background 🚀</h2>
                 <p>
-                    I bring <strong>6+ years of experience</strong> working with
+                    I bring <strong>7+ years of experience</strong> working with
                     <strong> JavaScript</strong> and its modern frameworks like
                     <strong> React.js</strong>, <strong> Vuejs</strong>, <strong> Angular</strong> along with core web technologies
                     (<strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Node.js</strong>, and
