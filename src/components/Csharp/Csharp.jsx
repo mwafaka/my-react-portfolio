@@ -22,7 +22,7 @@ function Csharp() {
 
     return (
         <section className="portfolio" id="portfolio">
-            <h2 className='section-title'>Csharp Projects</h2>
+            <h2 className='section-title'>C# Projects</h2>
             <ul className="portfolio__list">
                 {list.map(item => (
                     <PortfolioList
