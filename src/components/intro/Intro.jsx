@@ -4,14 +4,16 @@ import { useEffect, useRef } from 'react';
 
 // Import images
 import manImage from '../../assets/m.jpeg';
-/* import htmlLogo from '../../assets/html.png';
+import htmlLogo from '../../assets/html.png';
 import cssLogo from '../../assets/css.png';
 import jsLogo from '../../assets/js.png';
 import reactLogo from '../../assets/react.png';
 import nodeLogo from '../../assets/node.png';
 import pythonLogo from '../../assets/python.png';
 import mongoLogo from '../../assets/mongo.png';
- */
+import java from '../../assets/java.png';
+import net from '../../assets/.net.png';
+
 function Intro() {
     const textRef = useRef();
 
@@ -46,15 +48,18 @@ function Intro() {
                 </div>
             </div>
 
-            {/*         <div className="bubbles">
+            <div className="bubbles">
+
                 <img src={htmlLogo} alt="HTML" />
+                <img src={net} alt="net" className="rounded-[24px]" />
+                <img src={java} alt="java" />
                 <img src={cssLogo} alt="CSS" />
                 <img src={jsLogo} alt="JavaScript" />
                 <img src={reactLogo} alt="React" />
                 <img src={nodeLogo} alt="Node.js" />
                 <img src={pythonLogo} alt="Python" />
                 <img src={mongoLogo} alt="MongoDB" />
-            </div> */}
+            </div>
         </div>
     );
 }
