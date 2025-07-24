@@ -1,15 +1,19 @@
 {
   "compilerOptions": {
+    "target": "ES2020", // ✅ Enables modern JS features like Symbol, Iterable
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2020"
+    ],
     "allowJs": true,
+    "allowImportingTsExtensions": true,
     "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "node",
-    "composite": true
+    "noEmit": true,
   },
-  "include": ["src"],
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+  "include": [
+    "src"
   ]
 }
