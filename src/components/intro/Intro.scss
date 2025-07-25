@@ -32,11 +32,12 @@
     justify-content: center;
 
     .imgContainer {
-      width: 270px;
+      width: 230px;
       height: 280px;
       border-radius: 50%;
       object-fit: cover;
       /* crop to fill */
+    
 
       object-position: top;
       background: rgba(255, 255, 255, 0.2);
@@ -57,6 +58,7 @@
         border-radius: 50%;
 
         object-fit: cover;
+        object-position: center top;
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
       }
     }
